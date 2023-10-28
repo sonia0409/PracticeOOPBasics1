@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseDocument.cs" />
+    <Compile Include="BaseAnimal.cs" />
+    <Compile Include="BaseGeometry.cs" />
+    <Compile Include="Dog.cs" />
     <Compile Include="Hyundai.cs" />
-    <Compile Include="IBaseDocument.cs" />
+    <Compile Include="IBaseGeometry.cs" />
     <Compile Include="IGeometry.cs" />
     <Compile Include="MyCar.cs" />
     <Compile Include="Program.cs" />

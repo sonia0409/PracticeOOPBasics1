@@ -21,14 +21,31 @@ namespace PracticeOOPBasics1
 
 
             //interface - provides losse coupling
-            BaseDocument geometries = new BaseDocument();
+            BaseGeometry geometries = new BaseGeometry();
             geometries.CalculateArea(100, 200);
             geometries.GetShape("rectangle");
 
-            IBaseDocument square = new BaseDocument();
+            IBaseGeometry square = new BaseGeometry();
             square.CalculateArea(2, 2);
             //square.GetShape("square");  // error method is not defined in teh IBaseDocument class
 
+            //Inheritance Animal : Dog
+
+            //object of derived class
+            Dog labrador = new Dog();
+
+            //access method field and method of base class
+            labrador.name = "Reio";
+            labrador.display();
+
+            //access method from the derived (dog) class
+            labrador.getName();
+            //acccess protected method 
+            //labrador.eat(); //error cannot access the method
+            labrador.DisplayEat(); //error cannot access the method
+
+            labrador.sound();
+            
             Console.ReadLine();
 
             
