@@ -43,9 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseDocument.cs" />
+    <Compile Include="AnimalAbs.cs" />
+    <Compile Include="deriveAbs.cs" />
+    <Compile Include="DogAbs.cs" />
+    <Compile Include="LanguageAbs.cs" />
+    <Compile Include="BaseAnimal.cs" />
+    <Compile Include="BaseGeometry.cs" />
+    <Compile Include="Dog.cs" />
     <Compile Include="Hyundai.cs" />
-    <Compile Include="IBaseDocument.cs" />
+    <Compile Include="IBaseGeometry.cs" />
     <Compile Include="IGeometry.cs" />
     <Compile Include="MyCar.cs" />
     <Compile Include="PartialClass1.cs" />

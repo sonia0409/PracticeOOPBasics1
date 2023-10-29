@@ -21,24 +21,59 @@ namespace PracticeOOPBasics1
 
 
             //interface - provides losse coupling
-            BaseDocument geometries = new BaseDocument();
+            Console.WriteLine("---------------Interface Class---------------");
+
+            BaseGeometry geometries = new BaseGeometry();
             geometries.CalculateArea(100, 200);
             geometries.GetShape("rectangle");
 
-            IBaseDocument square = new BaseDocument();
+            IBaseGeometry square = new BaseGeometry();
             square.CalculateArea(2, 2);
             //square.GetShape("square");  // error method is not defined in teh IBaseDocument class
 
 
-            //partial class and method
+            //Inheritance Animal : Dog
+            Console.WriteLine("---------------Inheritance---------------");
+            //object of derived class
+            Dog labrador = new Dog();
+
+            //access method field and method of base class
+            labrador.name = "Reio";
+            labrador.display();
+
+            //access method from the derived (dog) class
+            labrador.getName();
+            //acccess protected method 
+            //labrador.eat(); //error cannot access the method
+            labrador.DisplayEat(); //error cannot access the method
+
+            labrador.sound();
+
+            //Abstract Class
+            Console.WriteLine("---------------Abstract Class---------------");
+            //LanguageAbs obj = new LanguageAbs(); //error cannot create an instance of the abstract type or interface
+            deriveAbs abstractClass = new deriveAbs();
+            abstractClass.displayAbstarct("abstract method overriden from an abstract class....");
+            abstractClass.displayNonAbstract();
+
+            DogAbs dog = new DogAbs();
+            dog.makeSound();
+            dog.Name = "Kyzo";
+
+
+            //partial class
+
+   //partial class and method
             Record myRecord = new Record(10, 15);
             myRecord.PrintRecord();
+
+            //sealed class
+
 
 
 
             Console.ReadLine();
 
-            
         }
     }
 }
