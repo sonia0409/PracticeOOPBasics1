@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticeOOPBasics1
 {
-    internal class BaseDocument : IBaseDocument, IGeometry
+    internal class BaseGeometry : IBaseGeometry, IGeometry
     {
         //Implementing Multiple Interfaces, multiple interfaces are possible however multiple inheritanec is not possible in c#
         string _shape;

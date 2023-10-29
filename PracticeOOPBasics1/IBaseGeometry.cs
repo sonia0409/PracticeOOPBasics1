@@ -9,7 +9,7 @@ namespace PracticeOOPBasics1
     //by convention interface class starts with "I".
     //Unlike abstract class all the members (method or properties) are abstract 
     //good to instanciate the methods here, not properties
-    interface IBaseDocument
+    interface IBaseGeometry
     {
        
         //no access modifier used within the class
