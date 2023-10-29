@@ -29,9 +29,13 @@ namespace PracticeOOPBasics1
             square.CalculateArea(2, 2);
             //square.GetShape("square");  // error method is not defined in teh IBaseDocument class
 
-            Console.ReadLine();
+
 
             //sealed class and method
+            DogSealed sealedDog = new DogSealed();
+            sealedDog.makeSound();
+            Console.ReadLine();
+
             
         }
     }
