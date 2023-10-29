@@ -21,6 +21,8 @@ namespace PracticeOOPBasics1
 
 
             //interface - provides losse coupling
+            Console.WriteLine("---------------Interface Class---------------");
+
             BaseGeometry geometries = new BaseGeometry();
             geometries.CalculateArea(100, 200);
             geometries.GetShape("rectangle");
@@ -30,7 +32,7 @@ namespace PracticeOOPBasics1
             //square.GetShape("square");  // error method is not defined in teh IBaseDocument class
 
             //Inheritance Animal : Dog
-
+            Console.WriteLine("---------------Inheritance---------------");
             //object of derived class
             Dog labrador = new Dog();
 
@@ -45,10 +47,29 @@ namespace PracticeOOPBasics1
             labrador.DisplayEat(); //error cannot access the method
 
             labrador.sound();
-            
+
+            //Abstract Class
+            Console.WriteLine("---------------Abstract Class---------------");
+            //LanguageAbs obj = new LanguageAbs(); //error cannot create an instance of the abstract type or interface
+            deriveAbs abstractClass = new deriveAbs();
+            abstractClass.displayAbstarct("abstract method overriden from an abstract class....");
+            abstractClass.displayNonAbstract();
+
+            DogAbs dog = new DogAbs();
+            dog.makeSound();
+            dog.Name = "Kyzo";
+
+
+            //partial class
+
+
+
+            //sealed class
+
+
+
             Console.ReadLine();
 
-            
         }
     }
 }
