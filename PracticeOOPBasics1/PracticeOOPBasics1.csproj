@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalSealed.cs" />
     <Compile Include="BaseDocument.cs" />
+    <Compile Include="DogSealed.cs" />
     <Compile Include="Hyundai.cs" />
     <Compile Include="IBaseDocument.cs" />
     <Compile Include="IGeometry.cs" />

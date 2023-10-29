@@ -31,6 +31,7 @@ namespace PracticeOOPBasics1
 
             Console.ReadLine();
 
+            //sealed class and method
             
         }
     }
