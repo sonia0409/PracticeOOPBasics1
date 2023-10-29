@@ -32,6 +32,7 @@ namespace PracticeOOPBasics1
             //square.GetShape("square");  // error method is not defined in teh IBaseDocument class
 
 
+
             //Inheritance Animal : Dog
             Console.WriteLine("---------------Inheritance---------------");
             //object of derived class
@@ -67,8 +68,12 @@ namespace PracticeOOPBasics1
             Record myRecord = new Record(10, 15);
             myRecord.PrintRecord();
 
-            //sealed class
 
+
+
+            //sealed class and method
+            DogSealed sealedDog = new DogSealed();
+            sealedDog.makeSound();
 
 
 

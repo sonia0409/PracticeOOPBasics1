@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="AnimalSealed.cs" />
+    <Compile Include="DogSealed.cs" />
+
     <Compile Include="AnimalAbs.cs" />
     <Compile Include="deriveAbs.cs" />
     <Compile Include="DogAbs.cs" />
@@ -50,6 +54,7 @@
     <Compile Include="BaseAnimal.cs" />
     <Compile Include="BaseGeometry.cs" />
     <Compile Include="Dog.cs" />
+
     <Compile Include="Hyundai.cs" />
     <Compile Include="IBaseGeometry.cs" />
     <Compile Include="IGeometry.cs" />
