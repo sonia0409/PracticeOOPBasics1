@@ -29,6 +29,13 @@ namespace PracticeOOPBasics1
             square.CalculateArea(2, 2);
             //square.GetShape("square");  // error method is not defined in teh IBaseDocument class
 
+
+            //partial class and method
+            Record myRecord = new Record(10, 15);
+            myRecord.PrintRecord();
+
+
+
             Console.ReadLine();
 
             
